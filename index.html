@@ -15,6 +15,7 @@
             background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
+            padding-top: 60px; /* Offset for fixed navbar */
         }
         header {
             background: linear-gradient(135deg, #0366d6, #4dabf7);
@@ -33,6 +34,11 @@
             background-color: #24292e;
             padding: 1rem;
             text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         nav a {
             color: white;
@@ -108,6 +114,9 @@
             margin-top: 2rem;
         }
         @media (max-width: 600px) {
+            body {
+                padding-top: 80px; /* Adjust for stacked nav links */
+            }
             header h1 {
                 font-size: 1.8rem;
             }
@@ -144,7 +153,6 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I'm a passionate Full-Stack Developer with over 2 years of experience building scalable web applications using JavaScript, React, Java, and Spring Boot. I enjoy solving real-world problems, translating business requirements into technical solutions, and continuously improving my technical and soft skills. My goal is to contribute to impactful projects and grow into a technical leadership role.</p>
-            <a href="#contact">GetInTouch</a>
         </section>
         <section id="skills">
             <h2>Skills</h2>
@@ -164,14 +172,14 @@
                 <p><strong>Description</strong>: A full-stack travel platform connecting users with destinations based on desired emotional experiences, leveraging AI for personalized travel plans.</p>
                 <p><strong>Features</strong>: Integrated OpenAI API for tailored itineraries, Google Maps API for destinations and routes, secure authentication with OAuth2.0 (Google, Facebook, GitHub) using Spring Security and JWT, RESTful APIs with CRUD operations.</p>
                 <p><strong>Tech Stack</strong>: Java, Spring Boot, JavaScript, React, TailwindCSS, MySQL, OpenAI API, Google Maps API, OAuth2.0, Spring Security, JWT</p>
-                <p><strong>GitHub</strong>: <a href="https://github.com/aishdande9/travel-vibes">Repository</a>https://github.com/aishdande9/the-bugfest-club.git</p>
+                <p><strong>GitHub</strong>: <a href="https://github.com/aishdande9/the-bugfest-club.git">Repository</a></p>
             </div>
             <div class="project">
                 <h3>🎬 React Movie Search App - Independent Project</h3>
                 <p><strong>Description</strong>: A dynamic movie search application built with React, fetching data from the Movie Database API.</p>
                 <p><strong>Features</strong>: Responsive UI with React components, search by title/genre/year with real-time results, state management with React Hooks.</p>
                 <p><strong>Tech Stack</strong>: JavaScript, React, React Hooks, Axios, CSS/Styled Components, React Router, Movie Database API</p>
-                <p><strong>GitHub</strong>: <a href="https://github.com/aishdande9/react-movie-app">Repository</a>https://github.com/aishdande9/cinema-hub-react.git</p>
+                <p><strong>GitHub</strong>: <a href="https://github.com/aishdande9/cinema-hub-react.git">Repository</a></p>
             </div>
         </section>
         <section id="experience">
@@ -197,12 +205,12 @@
             <p>
                 <a href="https://www.linkedin.com/in/aishwarya-dande-ba7314336/">LinkedIn</a> |
                 <a href="https://www.github.com/aishdande9">GitHub</a> |
-                <a href="mailto:aish.dande@gmail.com">Email</a> (Update with actual email)
+                <a href="mailto:aish.dande@gmail.com">Email</a>
             </p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 Aishwarya Dande. All rights reserved.</p>
+        <p>© 2025 Aishwarya Dande. All rights reserved.</p>
     </footer>
     <script>
         // Smooth scrolling for nav links
